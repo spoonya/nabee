@@ -1,0 +1,29 @@
+doctype html
+html(lang="ru")
+  block head
+    head
+      meta(charset="utf-8")
+      meta(name="description" content="Descrip")
+      meta(content="width=device-width, initial-scale=1" name="viewport")
+      meta(content="ie=edge" http-equiv="x-ua-compatible")
+
+      link(rel="preconnect" href="https://fonts.googleapis.com")
+      link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+      link(href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet")
+
+      link(rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css")
+      script(src="https://unpkg.com/swiper@8/swiper-bundle.min.js")
+
+      link(rel="stylesheet" href="assets/css/style.min.css")
+
+      block title
+        title NaBee
+  body
+    block header
+      include header
+    .page
+      block content
+      block footer
+        include footer
+    block scripts
+      script(src='assets/js/main.js')
