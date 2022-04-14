@@ -22,13 +22,13 @@
   }
 }
 
-@mixin media-smartphone-lg {
+@mixin media-phone-lg {
   @media only screen and (max-width: $media-sm) {
     @content;
   }
 }
 
-@mixin media-smartphone-sm {
+@mixin media-phone-sm {
   @media only screen and (max-width: $media-xs) {
     @content;
   }

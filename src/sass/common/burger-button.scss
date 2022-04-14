@@ -1,10 +1,9 @@
-.burger {
+.burger-button {
+  display: flex;
   align-items: center;
   justify-content: center;
 
   z-index: 10;
-
-  display: flex;
 
   width: 40px;
   height: 30px;
@@ -12,10 +11,12 @@
   span {
     position: relative;
 
-    width: 40px;
-    height: 3px;
+    width: 25px;
+    height: 2px;
 
     background-color: $color-black-alpha;
+
+    border-radius: 4px;
   }
 
   span::before,
@@ -23,9 +24,10 @@
     position: absolute;
 
     width: 100%;
-    height: 3px;
+    height: 2px;
 
     background-color: inherit;
+    border-radius: inherit;
   }
 
   span {
@@ -38,11 +40,11 @@
     }
 
     &::before {
-      transform: translateY(-10px);
+      transform: translateY(-7px);
     }
 
     &::after {
-      transform: translateY(10px);
+      transform: translateY(7px);
 
       width: 25px;
 
@@ -53,8 +55,6 @@
   &.active {
     span {
       height: 0;
-
-      background-color: $color-white-alpha;
 
       &::before {
         transform: rotate(-45deg);
