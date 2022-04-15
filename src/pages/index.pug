@@ -6,13 +6,13 @@ block content
     section.services.section
       .services__descrip
         .container
-          .services__descrip-inner.section
-            .services__title.title.title--decor.title--dark
+          .descrip.section
+            .descrip__title.title.title--decor.title--dark
               h2
                 |Отрасли,
                 br
                 |с которыми мы работаем
-            .services__descrip-text.text.text--dark
+            .descrip__text.text.text--dark
               p Подберем металлообрабатывающее оборудование под нужды производства, как для небольшой производственной фирмы, так и для крупной многофункциональной компании
       .services__items
         .services__items-row
@@ -35,7 +35,7 @@ block content
                 span.services__item-descrip-num 02.
                 h3.services__item-title машиностроение
                 .services__item-descrip-text.text
-                  p Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ab, dicta enim minus iure exercitationem fugit praesentium assumenda tempora, earum omnis veniam hic fuga. Odio adipisci molestiae quaerat eveniet modi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quae sit distinctio aliquid libero molestiae dolor iure numquam eum? Aliquam, vitae praesentium quam quo perferendis ipsum autem sint provident fugiat.
+                  p Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ab, dicta enim minus iure exercitationem fugit praesentium assumenda tempora, earum omnis veniam hic fuga. Odio adipisci molestiae quaerat eveniet modi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quae sit distinctio aliquid libero molestiae dolor iure numquam eum? Aliquam, vitae praesentium quam quo perferendis ipsum autem sint provident fugiat. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi animi minus maxime voluptas? Magni harum expedita possimus itaque ea. Fugit magni libero facere ipsa quis fuga consequuntur nesciunt assumenda quisquam.
           .services__item(style="background-image: url(assets/img/jpg/service-3.jpg)")
             .services__item-content
               h3.services__item-title.services__item-title--to-hide Энергетика
@@ -56,7 +56,7 @@ block content
                 span.services__item-descrip-num 04.
                 h3.services__item-title Нефтехимическая промышленность
                 .services__item-descrip-text.text
-                  p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nesciunt ea, porro iure magni eligendi suscipit quisquam numquam voluptatem! Quidem incidunt adipisci deleniti aut ad. Repellat excepturi perspiciatis esse obcaecati numquam deserunt ut dolore praesentium qui debitis dignissimos ratione, maiores, quas corporis impedit!
+                  p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nesciunt ea, porro iure magni eligendi suscipit quisquam numquam voluptatem! Quidem incidunt adipisci deleniti aut ad. Repellat excepturi perspiciatis esse obcaecati numquam deserunt ut dolore praesentium qui debitis dignissimos ratione, maiores, quas corporis impedit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis repellendus laboriosam esse nam corrupti reiciendis consectetur doloribus molestiae dolore. Quam voluptatibus saepe quidem. Obcaecati, dolores ab. Tempore labore magni saepe?
           .services__item.services__item.services__item--wide(style="background-image: url(assets/img/jpg/service-5.jpg)")
             .services__item-content
               h3.services__item-title.services__item-title--to-hide Металлургическая промышленность
@@ -67,6 +67,7 @@ block content
                 h3.services__item-title Металлургическая промышленность
                 .services__item-descrip-text.text
                   p Наши производственные услуги гарантируют клиентам, что их люди, процессы и продукты являются максимально безопасными и эффективными. От логистики и соблюдения требований, до практики безопасности и обучения, Industify помогает вам защитить свой персонал, отточить свои операции и оставаться конкурентоспособными на рынке.
+
     //Features
     section.features.section
       .container
@@ -101,3 +102,35 @@ block content
               li Машиностроение
               li Нефтехимическая промышленность
               li Предприятия по транспорту нефти и газа
+
+    //Callback
+    section.callback
+      .container
+        .descrip.section
+          .descrip__title.title.title--decor
+            h2
+              |Отрасли,
+              br
+              |с которыми мы работаем
+          .descrip__text.text
+            p Подберем металлообрабатывающее оборудование под нужды производства, как для небольшой производственной фирмы, так и для крупной многофункциональной компании
+        .order
+          .order__header
+            .order__title.title
+              h3 Оставить заявку
+          form.form.callback__form(action="#" method="POST")
+            .form__inner
+              .form__control
+                input.form__input(type="text", name="name", placeholder="Ваше имя*", required)
+              .form__control
+                input.form__input(type="tel", name="phone", placeholder="Номер телефона*", required)
+              .form__control.form__control--high
+                textarea.form__input(name="message", placeholder="Расскажите коротко о вашем проекте" maxlength="250")
+                label.form__upload-button
+                  input.form__input(type="file" multiple="multiple" accept=".doc, .docx, .odt, .pdf, .ppt, .pptx, .tex, .txt, .rtf, .wps, .wks, .wpd, .png, .jpg, .jpeg" hidden name="files")
+                  span.form__upload-button-txt
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14.9996 0C6.71564 0 0 6.7161 0 14.9997C0 23.2833 6.71564 30 14.9996 30C23.2836 30 30 23.2837 30 14.9997C30 6.7157 23.2836 0 14.9996 0ZM22.1999 13.3598L12.343 23.216C12.3396 23.2194 12.3368 23.2222 12.3334 23.2256L12.273 23.286L12.2699 23.2826C11.7138 23.8005 10.9933 24.0589 10.2474 24.0589C9.35776 24.0589 8.43496 23.6961 7.72095 22.982C7.08605 22.3476 6.70534 21.528 6.64904 20.6742C6.59324 19.8297 6.86065 19.0506 7.39755 18.4608L7.39215 18.4554L17.1332 8.7144C17.9559 7.8915 19.3541 7.9521 20.2509 8.8487C20.6713 9.2691 20.9242 9.8143 20.9618 10.3833C21.0017 10.9829 20.7911 11.5598 20.3842 11.9662L12.4546 19.8966L11.3541 18.7964L19.2842 10.8657C19.4004 10.7495 19.4162 10.5954 19.409 10.487C19.3963 10.2972 19.3019 10.1011 19.1502 9.9493C18.8652 9.6643 18.4453 9.6031 18.2334 9.8152L8.58786 19.4605C8.30956 19.7385 8.17266 20.1333 8.20176 20.5716C8.23336 21.0486 8.45336 21.5139 8.82136 21.8819C9.55196 22.6123 10.6354 22.7183 11.2394 22.1195L21.1002 12.2595C21.5595 11.7999 21.7867 11.1539 21.7395 10.4409C21.6897 9.689 21.3453 8.9584 20.7703 8.3834C19.6104 7.2238 17.872 7.0757 16.8942 8.053L8.73626 16.2106L7.63575 15.1104L15.7937 6.9525C17.3779 5.3686 20.104 5.5164 21.8705 7.2827C22.7127 8.1243 23.2174 9.2092 23.2924 10.3377C23.3695 11.5049 22.9817 12.5781 22.1999 13.3598Z" fill="#2580EA"/>
+                    </svg>
+                    span Прикрепить файл
+            button.form__submit.button(type="submit") Получить консультацию

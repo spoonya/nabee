@@ -1,0 +1,20 @@
+.order {
+  border: 1px solid $color-blue-alpha;
+  border-top: 0;
+  border-radius: 10px;
+
+  background-color: rgba($color-blue-alpha, 0.12);
+}
+
+.order__header {
+  text-align: center;
+  background-color: $color-blue-alpha;
+
+  padding: 2.3rem;
+
+  border-radius: 10px;
+}
+
+.order__title {
+  font-size: 2.8rem;
+}

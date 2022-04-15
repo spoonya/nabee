@@ -1,0 +1,40 @@
+.descrip {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include media-tablet-sm {
+    flex-direction: column;
+  }
+}
+
+.descrip__title {
+  margin-right: 20px;
+
+  @include media-tablet-lg {
+    min-width: 325px;
+    margin-right: 40px;
+  }
+
+  @include media-tablet-sm {
+    margin-bottom: 20px;
+    min-width: unset;
+  }
+}
+
+.descrip__text {
+  max-width: 63rem;
+  width: 100%;
+
+  @include media-desktop {
+    max-width: 500px;
+  }
+
+  @include media-laptop {
+    max-width: 440px;
+  }
+
+  @include media-tablet-lg {
+    max-width: unset;
+  }
+}

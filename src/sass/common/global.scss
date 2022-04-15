@@ -75,7 +75,7 @@ input,
 textarea {
   font: inherit;
 
-  color: $color-blue-alpha;
+  color: $color-white-alpha;
 
   border: none;
   background: none;
@@ -91,13 +91,14 @@ input[type='button'] {
 input::placeholder,
 textarea::placeholder {
   opacity: 1;
-  color: rgba($color: $color-white-alpha, $alpha: 0.5);
+  color: rgba($color-white-alpha, 1);
 }
 
 button {
   display: inline-block;
 
   font: inherit;
+  color: inherit;
 
   padding: 0;
   margin: 0;
