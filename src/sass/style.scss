@@ -1,6 +1,7 @@
 @import 'utils/vars';
 
 @import 'mixins/media';
+@import 'mixins/scroll';
 @import 'mixins/outline';
 
 @import 'common/global';
@@ -8,9 +9,12 @@
 @import 'common/header';
 @import 'common/logo';
 @import 'common/burger-button';
+@import 'common/section';
 @import 'common/title';
 @import 'common/text';
 @import 'common/footer';
 
 @import 'index/intro';
+@import 'index/services';
 @import 'index/features';
+@import 'index/sectors';

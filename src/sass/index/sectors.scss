@@ -1,0 +1,152 @@
+.sectors__inner {
+  position: relative;
+
+  display: flex;
+
+  &::after {
+    content: '';
+
+    position: absolute;
+
+    top: 0;
+    left: 29%;
+
+    width: 100%;
+    height: 100%;
+
+    background: url('../img/svg/dots-3.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @include media-tablet-lg {
+      left: 34%;
+
+      background: url('../img/svg/dots-3-md.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    @include media-tablet-sm {
+      left: 13%;
+
+      background: url('../img/svg/dots-3-sm.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  @include media-tablet-sm {
+    justify-content: flex-end;
+  }
+}
+
+.sectors__img {
+  position: relative;
+
+  z-index: 1;
+
+  max-width: 74rem;
+  width: 100%;
+
+  border-radius: 10px;
+  overflow: hidden;
+  object-fit: cover;
+
+  @include media-tablet-lg {
+    max-width: 420px;
+  }
+
+  @include media-tablet-md {
+    max-width: 409px;
+  }
+
+  @include media-tablet-sm {
+    display: none;
+  }
+}
+
+.sectors__descrip {
+  position: absolute;
+
+  z-index: 2;
+
+  right: 0;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  max-width: 63rem;
+  width: 100%;
+  border-radius: 10px;
+  background-color: $color-blue-alpha;
+  padding: 4rem;
+
+  h2 {
+    line-height: 1.5;
+    font-size: 2.4rem;
+    font-weight: 700;
+
+    margin-bottom: 3rem;
+
+    @include media-tablet-lg {
+      font-size: 16px;
+
+      margin-bottom: 15px;
+    }
+  }
+
+  @include media-tablet-lg {
+    padding: 20px;
+
+    max-width: 54vw;
+  }
+
+  @include media-tablet-sm {
+    position: static;
+
+    margin: 20px 0;
+
+    max-width: unset;
+
+    transform: translateY(0);
+  }
+}
+
+.sectors__list {
+  li {
+    position: relative;
+
+    display: flex;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    &:not(:last-child) {
+      margin-bottom: 19px;
+    }
+
+    &::before {
+      display: inline-block;
+
+      content: '';
+
+      margin-right: 15px;
+      margin-top: 0.3em;
+
+      min-width: 10px;
+      height: 10px;
+
+      border-radius: 2px;
+
+      background-color: $color-white-alpha;
+    }
+
+    @include media-tablet-lg {
+      font-size: 14px;
+
+      &:not(:last-child) {
+        margin-bottom: 8px;
+      }
+    }
+  }
+}

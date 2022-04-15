@@ -1,0 +1,10 @@
+@mixin element-scroll {
+  &::-webkit-scrollbar {
+    width: 5px;
+    background: $color-blue-alpha;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgba($color-white-alpha, 0.7);
+  }
+}

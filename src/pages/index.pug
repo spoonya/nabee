@@ -2,11 +2,76 @@ extends common/layout
 
 block content
   main
+    //Services
+    section.services.section
+      .services__descrip
+        .container
+          .services__descrip-inner.section
+            .services__title.title.title--decor.title--dark
+              h2
+                |Отрасли,
+                br
+                |с которыми мы работаем
+            .services__descrip-text.text.text--dark
+              p Подберем металлообрабатывающее оборудование под нужды производства, как для небольшой производственной фирмы, так и для крупной многофункциональной компании
+      .services__items
+        .services__items-row
+          .services__item(style="background-image: url(assets/img/jpg/service-1.jpg)")
+            .services__item-content
+              h3.services__item-title.services__item-title--to-hide Металлообработка
+              .services__item-num
+                img(src="assets/img/svg/01.svg", width="270", height="220", alt="")
+              .services__item-descrip
+                span.services__item-descrip-num 01.
+                h3.services__item-title Металлообработка
+                .services__item-descrip-text.text
+                  p Наши производственные услуги гарантируют клиентам, что их люди, процессы и продукты являются максимально безопасными и эффективными. От логистики и соблюдения требований, до практики безопасности и обучения, Industify помогает вам защитить свой персонал, отточить свои операции и оставаться конкурентоспособными на рынке.
+          .services__item(style="background-image: url(assets/img/jpg/service-2.jpg)")
+            .services__item-content
+              h3.services__item-title.services__item-title--to-hide машиностроение
+              .services__item-num
+                img(src="assets/img/svg/02.svg", width="270", height="220", alt="")
+              .services__item-descrip
+                span.services__item-descrip-num 02.
+                h3.services__item-title машиностроение
+                .services__item-descrip-text.text
+                  p Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ab, dicta enim minus iure exercitationem fugit praesentium assumenda tempora, earum omnis veniam hic fuga. Odio adipisci molestiae quaerat eveniet modi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quae sit distinctio aliquid libero molestiae dolor iure numquam eum? Aliquam, vitae praesentium quam quo perferendis ipsum autem sint provident fugiat.
+          .services__item(style="background-image: url(assets/img/jpg/service-3.jpg)")
+            .services__item-content
+              h3.services__item-title.services__item-title--to-hide Энергетика
+              .services__item-num
+                img(src="assets/img/svg/03.svg", width="270", height="220", alt="")
+              .services__item-descrip
+                span.services__item-descrip-num 03.
+                h3.services__item-title Энергетика
+                .services__item-descrip-text.text
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, est.
+        .services__items-row.services__items-row--wide
+          .services__item.services__item.services__item--wide(style="background-image: url(assets/img/jpg/service-4.jpg)")
+            .services__item-content
+              h3.services__item-title.services__item-title--to-hide Нефтехимическая промышленность
+              .services__item-num
+                img(src="assets/img/svg/04.svg", width="270", height="220", alt="")
+              .services__item-descrip.services__item-descrip--wide
+                span.services__item-descrip-num 04.
+                h3.services__item-title Нефтехимическая промышленность
+                .services__item-descrip-text.text
+                  p Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nesciunt ea, porro iure magni eligendi suscipit quisquam numquam voluptatem! Quidem incidunt adipisci deleniti aut ad. Repellat excepturi perspiciatis esse obcaecati numquam deserunt ut dolore praesentium qui debitis dignissimos ratione, maiores, quas corporis impedit!
+          .services__item.services__item.services__item--wide(style="background-image: url(assets/img/jpg/service-5.jpg)")
+            .services__item-content
+              h3.services__item-title.services__item-title--to-hide Металлургическая промышленность
+              .services__item-num
+                img(src="assets/img/svg/05.svg", width="270", height="220", alt="")
+              .services__item-descrip.services__item-descrip--wide
+                span.services__item-descrip-num 05.
+                h3.services__item-title Металлургическая промышленность
+                .services__item-descrip-text.text
+                  p Наши производственные услуги гарантируют клиентам, что их люди, процессы и продукты являются максимально безопасными и эффективными. От логистики и соблюдения требований, до практики безопасности и обучения, Industify помогает вам защитить свой персонал, отточить свои операции и оставаться конкурентоспособными на рынке.
     //Features
-    section.features
+    section.features.section
       .container
         .features__inner
-          .title.features__title
+          .features__title.title.title--dark.title--decor
             h2 Почему стоит обратиться к нам?
         .features__items
           div
@@ -21,3 +86,18 @@ block content
           div
             img(src="assets/img/svg/feature-4.svg", alt="", width="80", height="80", loading="lazy")
             h3 10 лет на рынке
+
+    //Sectors
+    section.sectors.section
+      .container
+        .sectors__inner
+          .sectors__img
+            img(src="assets/img/jpg/image-1.jpg", width="740", height="510", alt="", loading="lazy")
+          .sectors__descrip
+            h2 Нашими клиентами являются предприятия в следующих отраслях промышленности:
+            ul.sectors__list
+              li Делевообработка и металлообработка
+              li Атомная энергетика
+              li Машиностроение
+              li Нефтехимическая промышленность
+              li Предприятия по транспорту нефти и газа
