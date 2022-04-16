@@ -5,7 +5,7 @@
   }
 
   &::-webkit-scrollbar-thumb {
-    background: rgba($color-white-alpha, 0.7);
+    background: darken($color-white-alpha, 10);
     border-radius: 10px;
   }
 }

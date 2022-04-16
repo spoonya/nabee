@@ -1,0 +1,57 @@
+extends common/layout
+
+block content
+  main
+    //About
+    section.about.blackout(style="background-image: url(assets/img/jpg/about.jpg)")
+      .blackout__content
+        .container
+          //Crumbs
+          +crumbs([
+            {href: '', name: 'Контакты'},
+          ])
+          .about__inner
+            .about__title.title
+              h1 О нас
+            .about__text.text
+              p ТОО "NaBee" имеем опыт продаж и комплектующих более 10 лет.
+              p Основными нашими партнерами являются крупные предприятия нефтехимической, энергетической, металлургической промышленности, а так же в машиностроении и металлообработке.
+
+    //Edges
+    section.edges
+      .container
+        .edges__inner
+          .edges__content
+            .edges__title.title.title--decor.title--dark.title--margin
+              h2 Nabee это:
+            .edges__items
+              .edges__item.feature-item
+                img(src="assets/img/svg/feature-1.svg", alt="", width="80", height="80", loading="lazy")
+                h3 Поставщики на все крупные предприятия Казахстана
+              .edges__item.feature-item
+                img(src="assets/img/svg/feature-2.svg", alt="", width="80", height="80", loading="lazy")
+                h3 Профессионалы своего дела
+              .edges__item.feature-item
+                img(src="assets/img/svg/feature-3.svg", alt="", width="80", height="80", loading="lazy")
+                h3 Официальная гарантия
+              .edges__item.feature-item
+                img(src="assets/img/svg/feature-4.svg", alt="", width="80", height="80", loading="lazy")
+                h3 10 лет на рынке
+          .edges__img
+            .image
+              img(src="assets/img/jpg/about-1.jpg", width="628", height="421", alt="", loading="lazy")
+
+    //Optimization
+    section.optimization
+      .container
+        .optimization__inner
+          .optimization__img.image
+            img(src="assets/img/jpg/about-2.jpg", width="628", height="421", alt="", loading="lazy")
+          .optimization__descrip
+            .title.title--decor.title--dark.title--margin
+              h2 Оптимизируйте ваше производcтво
+            .text.text--dark
+              p Доверяя нам вы получаете самое качественное и надежное оборудование, которые оптимизирует ваше производство и прослужит долгие годы. Опыт наших специалистов в разлиных областях помогает нам найти гибкий подход к каждому клиетну.
+
+    //Callback
+    +sectionCallback

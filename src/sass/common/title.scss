@@ -38,6 +38,14 @@
     }
   }
 
+  &--margin {
+    margin-bottom: 4rem;
+
+    @include media-tablet-sm {
+      margin-bottom: 20px;
+    }
+  }
+
   h1,
   h2,
   h3 {

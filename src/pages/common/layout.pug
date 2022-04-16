@@ -19,13 +19,13 @@ html(lang="ru")
       block title
         title NaBee
   body
+    include ../mixins/common
     .page
       block header
         include header
-
-        block content
-        block footer
-          include footer
-        #overlay.overlay
+      block content
+      block footer
+        include footer
+      #overlay.overlay
     block scripts
       script(src='assets/js/main.js')
