@@ -120,10 +120,11 @@ block content
               h3 Оставить заявку
           form.form.callback__form(action="#" method="POST")
             .form__inner
-              .form__control
-                input.form__input(type="text", name="name", placeholder="Ваше имя*", required)
-              .form__control
-                input.form__input(type="tel", name="phone", placeholder="Номер телефона*", required)
+              .form__group
+                .form__control
+                  input.form__input(type="text", name="name", placeholder="Ваше имя*", required)
+                .form__control
+                  input.form__input(type="tel", name="phone", placeholder="Номер телефона*", required)
               .form__control.form__control--high
                 textarea.form__input(name="message", placeholder="Расскажите коротко о вашем проекте" maxlength="250")
                 label.form__upload-button

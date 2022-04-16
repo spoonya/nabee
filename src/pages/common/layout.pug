@@ -19,12 +19,13 @@ html(lang="ru")
       block title
         title NaBee
   body
-    block header
-      include header
     .page
-      block content
-      block footer
-        include footer
-      #overlay.overlay
+      block header
+        include header
+
+        block content
+        block footer
+          include footer
+        #overlay.overlay
     block scripts
       script(src='assets/js/main.js')

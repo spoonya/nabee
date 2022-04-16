@@ -2,8 +2,20 @@
   padding: 9rem 0;
 
   background-color: $color-black-alpha;
+
+  @include media-tablet-lg {
+    padding: 60px 0;
+  }
+
+  @include media-tablet-sm {
+    padding: 40px 0;
+  }
 }
 
 .callback__form {
   padding: 5rem;
+
+  @include media-tablet-sm {
+    padding: 40px 20px;
+  }
 }

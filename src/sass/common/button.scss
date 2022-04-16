@@ -1,5 +1,8 @@
 .button {
   display: block;
+  max-width: fit-content;
+
+  color: $color-white-alpha;
 
   background: linear-gradient(269.88deg, #2581ed 0.11%, #2ea7ff 99.92%);
   box-shadow: -3px -3px 15px rgba(255, 255, 255, 0.15),
