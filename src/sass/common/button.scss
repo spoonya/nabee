@@ -17,4 +17,17 @@
   &:hover {
     transform: scale(1.035);
   }
+
+  &--dark {
+    background: linear-gradient(
+      270deg,
+      #1f1f1f 0%,
+      #282828 0.01%,
+      #232323 0.02%,
+      #363636 100%
+    );
+    box-shadow: -3px -3px 15px rgba(255, 255, 255, 0.15),
+      0px 5px 15px rgba(54, 54, 54, 0.4), inset -4px -4px 12px #091522,
+      inset 4px 4px 12px #5a5a5a;
+  }
 }
