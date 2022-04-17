@@ -5,11 +5,20 @@ export const swiperHero = new Swiper('#swiper-hero', {
     delay: 4000
   },
 
-  effect: 'fade',
-
   navigation: {
     nextEl: '.hero__slider-button-next',
     prevEl: '.hero__slider-button-prev'
+  },
+
+  preloadImages: false,
+
+  lazy: {
+    loadPrevNext: true
+  },
+
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true
   },
 
   grabCursor: true,
