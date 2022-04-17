@@ -2,18 +2,18 @@ extends common/layout
 
 block content
   main
-    //About
-    section.about.blackout(style="background-image: url(assets/img/jpg/about.jpg)")
-      .blackout__content
-        .container
+    //Intro
+    section.intro(style="background-image: url(assets/img/jpg/about.jpg)")
+      .container
+        .intro__wrapper
           //Crumbs
           +crumbs([
-            {href: '', name: 'Контакты'},
+            {href: '', name: 'О нас'},
           ])
-          .about__inner
-            .about__title.title
+          .intro__inner
+            .intro__title.title
               h1 О нас
-            .about__text.text
+            .intro__text.text
               p ТОО "NaBee" имеем опыт продаж и комплектующих более 10 лет.
               p Основными нашими партнерами являются крупные предприятия нефтехимической, энергетической, металлургической промышленности, а так же в машиностроении и металлообработке.
 

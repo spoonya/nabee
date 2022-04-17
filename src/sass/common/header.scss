@@ -11,6 +11,8 @@
     .header__group {
       transform: translateX(0);
     }
+
+    box-shadow: none;
   }
 
   @include media-tablet-sm {

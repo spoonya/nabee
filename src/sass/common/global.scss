@@ -182,11 +182,15 @@ body {
 }
 
 .container {
-  max-width: 135rem;
+  max-width: 1350px;
   width: 100%;
   height: 100%;
   margin: 0 auto;
   padding: 0 30px;
+
+  @include media-desktop {
+    max-width: 1270px;
+  }
 
   @include media-tablet-sm {
     padding: 0 15px;

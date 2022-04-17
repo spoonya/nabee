@@ -7,29 +7,29 @@
 @import 'common/global';
 
 @import 'common/header';
-@import 'common/logo';
-@import 'common/descrip';
-@import 'common/order';
-@import 'common/feature-item';
-@import 'common/button';
-@import 'common/burger-button';
-@import 'common/section';
-@import 'common/callback';
 @import 'common/title';
 @import 'common/text';
+@import 'common/logo';
+@import 'common/button';
+@import 'common/burger-button';
+@import 'common/descrip';
+@import 'common/intro';
+@import 'common/order';
+@import 'common/feature-item';
+@import 'common/section';
+@import 'common/callback';
 @import 'common/image';
 @import 'common/form';
-@import 'common/blackout';
 @import 'common/crumbs';
 @import 'common/footer';
 
-@import 'index/intro';
 @import 'index/services';
 @import 'index/features';
 @import 'index/sectors';
 
-@import 'about/about';
 @import 'about/edges';
 @import 'about/optimization';
+
+@import 'contacts/contacts';
 
 @import '404/not-found';
