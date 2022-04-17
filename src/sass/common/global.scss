@@ -181,6 +181,12 @@ body {
   flex-direction: column;
 }
 
+.content {
+  @include media-tablet-sm {
+    margin-top: 68px;
+  }
+}
+
 .container {
   max-width: 1350px;
   width: 100%;

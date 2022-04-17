@@ -23,9 +23,10 @@ html(lang="ru")
     .page
       block header
         include header
-      block content
-      block footer
-        include footer
-      #overlay.overlay
+      .content
+        block content
+        block footer
+          include footer
+        #overlay.overlay
     block scripts
       script(src='assets/js/main.js')
