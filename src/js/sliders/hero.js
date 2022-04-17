@@ -11,7 +11,6 @@ export const swiperHero = new Swiper('#swiper-hero', {
   },
 
   preloadImages: false,
-
   lazy: {
     loadPrevNext: true
   },
