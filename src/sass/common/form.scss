@@ -40,15 +40,19 @@
   border-bottom: 1px solid $color-white-alpha;
 
   transition: transform 0.1s linear;
-}
 
-.form__input {
   &.error {
     border-color: $color-red-alpha;
     color: $color-red-alpha;
 
     &::placeholder {
       color: $color-red-alpha;
+    }
+  }
+
+  &:focus {
+    &::placeholder {
+      opacity: 0.5;
     }
   }
 }
