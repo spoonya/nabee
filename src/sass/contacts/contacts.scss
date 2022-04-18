@@ -18,7 +18,7 @@
   margin-right: 20px;
 
   background-color: $color-black-beta;
-  border: 0;
+  border: 1px solid $color-blue-alpha;
 
   @include media-tablet-lg {
     margin-right: 0;
