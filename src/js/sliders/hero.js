@@ -5,7 +5,7 @@ export const swiperHero = new Swiper('#swiper-hero', {
     delay: 4000
   },
 
-  speed: 1500,
+  speed: 1000,
 
   navigation: {
     nextEl: '.hero__slider-button-next',
