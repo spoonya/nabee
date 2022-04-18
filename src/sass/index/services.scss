@@ -56,7 +56,7 @@
     }
 
     .services__item-num {
-      animation: from-top-in 0.4s ease-in-out forwards;
+      animation: from-top-in 0.45s ease-in-out forwards;
     }
 
     .services__item-title--to-hide {
@@ -120,7 +120,7 @@
 
   max-width: 27rem;
 
-  animation: from-top-out 0.4s ease-in-out forwards;
+  animation: from-top-out 0.45s ease-in-out forwards;
 
   @include media-custom(1499.98px) {
     max-width: 200px;
@@ -181,7 +181,7 @@
 .services__item-descrip {
   transform: translateY(500%);
 
-  transition: transform 0.4s ease-in-out;
+  transition: transform 0.45s ease-in-out;
 }
 
 .services__item-content {
